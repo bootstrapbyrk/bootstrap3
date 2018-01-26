@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Bootstrap Plugins</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style type="text/css">
+        .scrollspy-example{
+          position:relative;
+          height:200px;
+          margin-top:10px;
+          overflow:auto}
+    </style>
+
+  </head>
+  <body>
+      <div class="container">
+		<div class="bs-docs-section">
+		  <h1 id="breadcrumbs" class="page-header">Breadcrumbs</h1>
+
+		  <p class="lead">Indicate the current page's location within a navigational hierarchy.</p>
+		  <p>Separators are automatically added in CSS through <code>:before</code> and <code>content</code>.</p>
+		  <div class="bs-example" data-example-id="simple-breadcrumbs">
+			<ol class="breadcrumb">
+			  <li class="active">Home</li>
+			</ol>
+			<ol class="breadcrumb">
+			  <li><a href="#">Home</a></li>
+			  <li class="active">Library</li>
+			</ol>
+			<ol class="breadcrumb">
+			  <li><a href="#">Home</a></li>
+			  <li><a href="#">Library</a></li>
+			  <li class="active">Data</li>
+			</ol>
+		  </div>
+		
+		<ol class="breadcrumb">
+		  <li><a href="#">Home</a></li>
+		  <li><a href="#">Library</a></li>
+		  <li class="active">Data</li>
+		</ol>
+		
+		</div>
+      </div>
+
+      <script src="js/jquery.js"></script>
+      <script src="js/bootstrap.js"></script>
+      <script type="text/javascript">
+        $(document).ready(function(){
+
+            $('#myDropdown').on('show.bs.dropdown', function () {
+               console.log("Opening dropdown..");
+            });
+
+            $('#myDropdown').on('shown.bs.dropdown', function () {
+               console.log("Dropdown opened..");
+            });
+
+            $('#myDropdown').on('hide.bs.dropdown', function () {
+               console.log("Hiding dropdown..");
+            });
+
+            $('#myDropdown').on('hidden.bs.dropdown', function () {
+               console.log("Dropdown hidden..");
+            });
+
+            $('.collapse').collapse({
+                    toggle: false
+            });
+
+            $('.tooltipButton').tooltip();
+
+            $('.popoverButton').popover(); 
+        });
+    </script>
+  </body>
+</html>

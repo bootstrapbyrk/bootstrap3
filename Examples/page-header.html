@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Bootstrap Plugins</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style type="text/css">
+        .scrollspy-example{
+          position:relative;
+          height:200px;
+          margin-top:10px;
+          overflow:auto}
+    </style>
+
+  </head>
+  <body>
+      <div class="container">
+		<div class="bs-docs-section">
+		  <h1 id="page-header" class="page-header">Page header</h1>
+
+		  <p>A simple shell for an <code>h1</code> to appropriately space out and segment sections of content on a page. It can utilize the <code>h1</code>'s default <code>small</code> element, as well as most other components (with additional styles).</p>
+		  <div class="bs-example" data-example-id="simple-page-header">
+			<div class="page-header">
+			  <h1>Example page header <small>Subtext for header</small></h1>
+			</div>
+		  </div>
+		<div class="page-header">
+		  <h1>Example page header <small>Subtext for header</small></h1>
+		</div>
+		</div>
+      </div>
+
+      <script src="js/jquery.js"></script>
+      <script src="js/bootstrap.js"></script>
+      <script type="text/javascript">
+        $(document).ready(function(){
+
+            $('#myDropdown').on('show.bs.dropdown', function () {
+               console.log("Opening dropdown..");
+            });
+
+            $('#myDropdown').on('shown.bs.dropdown', function () {
+               console.log("Dropdown opened..");
+            });
+
+            $('#myDropdown').on('hide.bs.dropdown', function () {
+               console.log("Hiding dropdown..");
+            });
+
+            $('#myDropdown').on('hidden.bs.dropdown', function () {
+               console.log("Dropdown hidden..");
+            });
+
+            $('.collapse').collapse({
+                    toggle: false
+            });
+
+            $('.tooltipButton').tooltip();
+
+            $('.popoverButton').popover(); 
+        });
+    </script>
+  </body>
+</html>

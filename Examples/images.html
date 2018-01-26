@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Bootstrap Plugins</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style type="text/css">
+        .scrollspy-example{
+          position:relative;
+          height:200px;
+          margin-top:10px;
+          overflow:auto}
+    </style>
+
+  </head>
+  <body>
+      <div class="container">
+		<div class="bs-docs-section">
+		  <h1 id="images" class="page-header">Images</h1>
+
+		  <h2 id="images-responsive">Responsive images</h2>
+		  <p>Images in Bootstrap 3 can be made responsive-friendly via the addition of the <code>.img-responsive</code> class. This applies <code>max-width: 100%;</code>, <code>height: auto;</code> and <code>display: block;</code> to the image so that it scales nicely to the parent element.</p>
+		  <p>To center images which use the <code>.img-responsive</code> class, use <code>.center-block</code> instead of <code>.text-center</code>. <a href="../css/#helper-classes-center">See the helper classes section</a> for more details about <code>.center-block</code> usage.</p>
+		  <div class="bs-callout bs-callout-warning" id="callout-images-ie-svg">
+			<h4>SVG images and IE 8-10</h4>
+			<p>In Internet Explorer 8-10, SVG images with <code>.img-responsive</code> are disproportionately sized. To fix this, add <code>width: 100% \9;</code> where necessary. Bootstrap doesn't apply this automatically as it causes complications to other image formats.</p>
+		  </div>
+		
+		<img src="..." class="img-responsive" alt="Responsive image">
+		
+
+		  <h2 id="images-shapes">Image shapes</h2>
+		  <p>Add classes to an <code>&lt;img&gt;</code> element to easily style images in any project.</p>
+		  <div class="bs-callout bs-callout-danger" id="callout-images-ie-rounded-corners">
+			<h4>Cross-browser compatibility</h4>
+			<p>Keep in mind that Internet Explorer 8 lacks support for rounded corners.</p>
+		  </div>
+		  <div class="bs-example bs-example-images" data-example-id="image-shapes">
+			<img data-src="holder.js/140x140" class="img-rounded" alt="A generic square placeholder image with rounded corners">
+			<img data-src="holder.js/140x140" class="img-circle" alt="A generic square placeholder image where only the portion within the circle circumscribed about said square is visible">
+			<img data-src="holder.js/140x140" class="img-thumbnail" alt="A generic square placeholder image with a white border around it, making it resemble a photograph taken with an old instant camera">
+		  </div>
+		
+		<img src="..." alt="..." class="img-rounded">
+		<img src="..." alt="..." class="img-circle">
+		<img src="..." alt="..." class="img-thumbnail">
+		
+		</div>
+      </div>
+
+      <script src="js/jquery.js"></script>
+      <script src="js/bootstrap.js"></script>
+      
+  </body>
+</html>

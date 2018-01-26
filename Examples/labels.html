@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Bootstrap Plugins</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style type="text/css">
+        .scrollspy-example{
+          position:relative;
+          height:200px;
+          margin-top:10px;
+          overflow:auto}
+    </style>
+
+  </head>
+  <body>
+      <div class="container">
+		<div class="bs-docs-section">
+		  <h1 id="labels" class="page-header">Labels</h1>
+
+		  <h2>Example</h2>
+		  <div class="bs-example" data-example-id="labels-in-headings">
+			<h1>Example heading <span class="label label-default">New</span></h1>
+			<h2>Example heading <span class="label label-default">New</span></h2>
+			<h3>Example heading <span class="label label-default">New</span></h3>
+			<h4>Example heading <span class="label label-default">New</span></h4>
+			<h5>Example heading <span class="label label-default">New</span></h5>
+			<h6>Example heading <span class="label label-default">New</span></h6>
+		  </div>
+		
+		<h3>Example heading <span class="label label-default">New</span></h3>
+		
+
+		  <h2>Available variations</h2>
+		  <p>Add any of the below mentioned modifier classes to change the appearance of a label.</p>
+		  <div class="bs-example" data-example-id="label-variants">
+			<span class="label label-default">Default</span>
+			<span class="label label-primary">Primary</span>
+			<span class="label label-success">Success</span>
+			<span class="label label-info">Info</span>
+			<span class="label label-warning">Warning</span>
+			<span class="label label-danger">Danger</span>
+		  </div>
+		
+		<span class="label label-default">Default</span>
+		<span class="label label-primary">Primary</span>
+		<span class="label label-success">Success</span>
+		<span class="label label-info">Info</span>
+		<span class="label label-warning">Warning</span>
+		<span class="label label-danger">Danger</span>
+		
+
+		  <div class="bs-callout bs-callout-info" id="callout-labels-inline-block">
+			<h4>Have tons of labels?</h4>
+			<p>Rendering problems can arise when you have dozens of inline labels within a narrow container, each containing its own <code>inline-block</code> element (like an icon). The way around this is setting <code>display: inline-block;</code>. For context and an example, <a href="https://github.com/twbs/bootstrap/issues/13219">see #13219</a>.</p>
+		  </div>
+		</div>
+
+      </div>
+
+      <script src="js/jquery.js"></script>
+      <script src="js/bootstrap.js"></script>
+      <script type="text/javascript">
+        $(document).ready(function(){
+
+            $('#myDropdown').on('show.bs.dropdown', function () {
+               console.log("Opening dropdown..");
+            });
+
+            $('#myDropdown').on('shown.bs.dropdown', function () {
+               console.log("Dropdown opened..");
+            });
+
+            $('#myDropdown').on('hide.bs.dropdown', function () {
+               console.log("Hiding dropdown..");
+            });
+
+            $('#myDropdown').on('hidden.bs.dropdown', function () {
+               console.log("Dropdown hidden..");
+            });
+
+            $('.collapse').collapse({
+                    toggle: false
+            });
+
+            $('.tooltipButton').tooltip();
+
+            $('.popoverButton').popover(); 
+        });
+    </script>
+  </body>
+</html>
